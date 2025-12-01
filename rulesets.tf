@@ -1,4 +1,3 @@
-data "github_organization" "current" {}
 
 resource "github_repository_ruleset" "main" {
   repository_id = github_repository.this.id
