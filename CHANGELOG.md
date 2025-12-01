@@ -12,6 +12,9 @@ upcoming relases.
 
 At release time, move the entries from here to a new release section.
 
+
+- Add Terraform ruleset.
+
 ### Additions
 
 ### Fixes
