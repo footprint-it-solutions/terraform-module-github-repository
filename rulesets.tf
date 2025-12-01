@@ -7,8 +7,8 @@ resource "github_repository_ruleset" "main" {
   enforcement   = "active"
 
   bypass_actors {
-    actor_id   = data.github_organization.current.id
-    actor_type = "Organization"
+    actor_id   = 5
+    actor_type = "RepositoryRole"
   }
 
   conditions {
