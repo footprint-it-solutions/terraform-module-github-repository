@@ -1,6 +1,6 @@
 
 resource "github_repository_ruleset" "main" {
-  repository_id = github_repository.this.id
+  repository = github_repository.this.id
 
   name          = "Main"
   target        = "branch"
@@ -9,20 +9,20 @@ resource "github_repository_ruleset" "main" {
   bypass_actors {
     actor_id   = 5
     actor_type = "RepositoryRole"
+    bypass_mode = "always"
   }
 
   conditions {
     ref_name {
       include = ["~DEFAULT_BRANCH"]
+      exclude = []
     }
   }
 
   rules {
-    non_fast_forward {}
+    non_fast_forward = true
 
-    commit_signatures {}
-
-    required_linear_history {}
+    required_linear_history = true
 
     creation = false
 
@@ -36,18 +36,11 @@ resource "github_repository_ruleset" "main" {
       required_deployment_environments = ["*"]
     }
 
-    code_scanning {}
-
-    required_checks {}
-
-    required_update {}
-
     pull_request {
       required_approving_review_count   = 1
-      require_code_owner_reviews        = true
+      require_code_owner_review         = true
       require_last_push_approval        = true
       required_review_thread_resolution = true
-      dismiss_stale_reviews             = true
     }
 
     required_status_checks {
