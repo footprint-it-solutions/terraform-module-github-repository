@@ -12,6 +12,9 @@ upcoming relases.
 
 At release time, move the entries from here to a new release section.
 
+
+- Add Terraform ruleset.
+
 ### Additions
 
 ### Fixes
@@ -19,6 +22,12 @@ At release time, move the entries from here to a new release section.
 ### Changes
 
 ### Removals
+
+## [1.1.0] - 2025-12-05
+
+### Added
+
+- Added default ruleset for repos
 
 ## [1.0.0] - 2025-11-23
 
