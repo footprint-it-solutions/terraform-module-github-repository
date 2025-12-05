@@ -2,13 +2,13 @@
 resource "github_repository_ruleset" "main" {
   repository = github_repository.this.id
 
-  name          = "Main"
-  target        = "branch"
-  enforcement   = "active"
+  name        = "Main"
+  target      = "branch"
+  enforcement = "active"
 
   bypass_actors {
-    actor_id   = 5
-    actor_type = "RepositoryRole"
+    actor_id    = 5
+    actor_type  = "RepositoryRole"
     bypass_mode = "always"
   }
 
@@ -22,12 +22,13 @@ resource "github_repository_ruleset" "main" {
   rules {
     non_fast_forward = true
 
-    required_linear_history = true
-
     creation = false
 
     # Deletion is NOT restricted in the screenshot
     deletion = false
+
+    required_linear_history = true
+    required_signatures     = true
 
     # Updates ARE restricted in the screenshot
     update = false
