@@ -26,10 +26,6 @@ resource "github_repository_ruleset" "main" {
 
     creation = false
 
-    merge_queue {
-      merge_method = "SQUASH"
-    }
-
     # Deletion is NOT restricted in the screenshot
     deletion = false
 
