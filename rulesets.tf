@@ -28,8 +28,7 @@ resource "github_repository_ruleset" "main" {
     required_linear_history = true
     required_signatures     = true
 
-    # Updates ARE restricted in the screenshot
-    update = false
+    update = true
 
     pull_request {
       required_approving_review_count   = 1
