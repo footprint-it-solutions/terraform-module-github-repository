@@ -32,10 +32,6 @@ resource "github_repository_ruleset" "main" {
     # Updates ARE restricted in the screenshot
     update = false
 
-    required_deployments {
-      required_deployment_environments = ["*"]
-    }
-
     pull_request {
       required_approving_review_count   = 1
       require_code_owner_review         = true
