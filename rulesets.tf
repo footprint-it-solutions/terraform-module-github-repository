@@ -23,9 +23,7 @@ resource "github_repository_ruleset" "main" {
     non_fast_forward = true
 
     creation = false
-
-    # Deletion is NOT restricted in the screenshot
-    deletion = false
+    deletion = true
 
     required_linear_history = true
     required_signatures     = true
