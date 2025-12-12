@@ -1,3 +1,13 @@
+variable "additional_bypass_actors" {
+  description = "List of additional actors allowed to bypass the repository ruleset."
+  type = list(object({
+    actor_id    = number
+    actor_type  = string
+    bypass_mode = string
+  }))
+  default = []
+}
+
 variable "allow_auto_merge" {
   description = "Boolean specifying whether auto-merging is enabled on pull requests."
   type        = bool

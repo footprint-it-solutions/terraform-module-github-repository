@@ -17,6 +17,10 @@ At release time, move the entries from here to a new release section.
 
 ### Additions
 
+## [1.2.0] - 2025-12-12
+
+- Added support for additional bypass actors
+
 ### Fixes
 
 ### Changes
