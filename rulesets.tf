@@ -28,8 +28,6 @@ resource "github_repository_ruleset" "main" {
     required_linear_history = true
     required_signatures     = true
 
-    update = true
-
     pull_request {
       required_approving_review_count   = 1
       require_code_owner_review         = true
