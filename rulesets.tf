@@ -37,7 +37,7 @@ resource "github_repository_ruleset" "main" {
     required_linear_history = true
     required_signatures     = true
 
-    update = true
+    update = false
 
     pull_request {
       required_approving_review_count   = 1
