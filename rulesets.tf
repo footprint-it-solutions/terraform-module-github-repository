@@ -9,7 +9,7 @@ resource "github_repository_ruleset" "main" {
   bypass_actors {
     actor_id    = 5
     actor_type  = "RepositoryRole"
-    bypass_mode = "always"
+    bypass_mode = var.repository_admin_bypass_mode
   }
 
   dynamic "bypass_actors" {
