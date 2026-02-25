@@ -17,6 +17,8 @@ At release time, move the entries from here to a new release section.
 
 ### Additions
 
+- Added `repository_admin_bypass_mode` variable to allow customising bypass mode for repository administrators in rulesets.
+
 ## [1.2.0] - 2026-01-09
 
 - Added support for additional bypass actors
