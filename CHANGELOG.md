@@ -12,10 +12,12 @@ upcoming relases.
 
 At release time, move the entries from here to a new release section.
 
+## [1.3.0] - 2026-02-25
 
+### Added
+
+- Added `repository_admin_bypass_mode` variable to allow customising bypass mode for repository administrators in rulesets.
 - Add Terraform ruleset.
-
-### Additions
 
 ## [1.2.0] - 2026-01-09
 
