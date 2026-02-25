@@ -12,10 +12,13 @@ upcoming relases.
 
 At release time, move the entries from here to a new release section.
 
+### Additions
+
+## [1.3.0] - 2026-02-25
+
+### Added
 
 - Add Terraform ruleset.
-
-### Additions
 
 ## [1.2.0] - 2026-01-09
 
