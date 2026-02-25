@@ -164,6 +164,12 @@ variable "pages" {
   default     = null
 }
 
+variable "repository_admin_bypass_mode" {
+  description = "The bypass mode for repository administrators. Defaults to \"always\"."
+  type        = string
+  default     = "always"
+}
+
 variable "security_and_analysis" {
   description = "The repository's security and analysis configuration."
   type        = any
