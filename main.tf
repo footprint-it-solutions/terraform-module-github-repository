@@ -10,7 +10,6 @@ resource "github_repository" "this" {
   delete_branch_on_merge                  = var.delete_branch_on_merge
   description                             = var.description
   gitignore_template                      = var.gitignore_template
-  has_downloads                           = var.has_downloads
   has_discussions                         = var.has_discussions
   has_issues                              = var.has_issues
   has_projects                            = var.has_projects
