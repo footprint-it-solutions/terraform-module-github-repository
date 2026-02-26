@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+Use this section to track upcoming changes, to let people see what changes they might expect in
+upcoming relases.
+
+At release time, move the entries from here to a new release section.
+
+## [1.3.1] - 2026-02-26
+
 ### Removed
 
 - Removed deprecated `has_downloads` argument from `github_repository` resource and module variables.
