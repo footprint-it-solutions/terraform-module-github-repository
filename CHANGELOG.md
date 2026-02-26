@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 Use this section to track upcoming changes, to let people see what changes they might expect in
-upcoming relases.
+upcoming releases.
 
 At release time, move the entries from here to a new release section.
 
