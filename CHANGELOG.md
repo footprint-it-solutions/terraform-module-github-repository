@@ -7,10 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-Use this section to track upcoming changes, to let people see what changes they might expect in
-upcoming releases.
+### Fixed
 
-At release time, move the entries from here to a new release section.
+- Corrected typo in `merge_queue_grouping_strategy` default value (from `ALLGAIN` to `ALLGREEN`).
+
+### Removed
+
+- Removed deprecated `ignore_vulnerability_alerts_during_read` variable and argument.
 
 ## [1.4.1] - 2026-03-10
 
