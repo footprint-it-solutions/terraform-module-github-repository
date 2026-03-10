@@ -7,10 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-Use this section to track upcoming changes, to let people see what changes they might expect in
-upcoming releases.
+### Added
 
-At release time, move the entries from here to a new release section.
+- Added support for GitHub Merge Queue options in the repository ruleset, with new variables for customisation.
+
+### Changed
+
+- Re-ordered attributes and blocks in `rulesets.tf` alphabetically for consistency with organisational coding standards.
 
 ## [1.3.1] - 2026-02-26
 

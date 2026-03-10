@@ -147,6 +147,54 @@ variable "merge_commit_title" {
   default     = null
 }
 
+variable "merge_queue_check_response_timeout_minutes" {
+  description = "The number of minutes to wait for a check response. Defaults to 60."
+  type        = number
+  default     = 60
+}
+
+variable "merge_queue_enabled" {
+  description = "Boolean specifying whether the merge queue is enabled. Defaults to false."
+  type        = bool
+  default     = false
+}
+
+variable "merge_queue_grouping_strategy" {
+  description = "The grouping strategy to use for the merge queue. Defaults to \"ALLGAIN\"."
+  type        = string
+  default     = "ALLGAIN"
+}
+
+variable "merge_queue_max_entries_to_build" {
+  description = "The maximum number of entries to build in the merge queue. Defaults to 5."
+  type        = number
+  default     = 5
+}
+
+variable "merge_queue_max_entries_to_merge" {
+  description = "The maximum number of entries to merge in the merge queue. Defaults to 5."
+  type        = number
+  default     = 5
+}
+
+variable "merge_queue_merge_method" {
+  description = "The merge method to use for the merge queue. Defaults to \"SQUASH\"."
+  type        = string
+  default     = "SQUASH"
+}
+
+variable "merge_queue_min_entries_to_merge" {
+  description = "The minimum number of entries to merge in the merge queue. Defaults to 1."
+  type        = number
+  default     = 1
+}
+
+variable "merge_queue_min_entries_to_merge_wait_minutes" {
+  description = "The minimum number of minutes to wait before merging in the merge queue. Defaults to 5."
+  type        = number
+  default     = 5
+}
+
 variable "name" {
   description = "The name of the repository."
   type        = string
