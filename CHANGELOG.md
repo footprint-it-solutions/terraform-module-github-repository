@@ -12,6 +12,16 @@ upcoming releases.
 
 At release time, move the entries from here to a new release section.
 
+## [1.4.2] - 2026-03-10
+
+### Fixed
+
+- Corrected typo in `merge_queue_grouping_strategy` default value (from `ALLGAIN` to `ALLGREEN`).
+
+### Removed
+
+- Removed deprecated `ignore_vulnerability_alerts_during_read` variable and argument.
+
 ## [1.4.1] - 2026-03-10
 
 ### Fixed

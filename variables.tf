@@ -117,12 +117,6 @@ variable "homepage_url" {
   default     = null
 }
 
-variable "ignore_vulnerability_alerts_during_read" {
-  description = "Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read."
-  type        = bool
-  default     = true # Resource default is false, but we prefer true
-}
-
 variable "is_template" {
   description = "Set to true to tell GitHub that this is a template repository."
   type        = bool
@@ -160,9 +154,9 @@ variable "merge_queue_enabled" {
 }
 
 variable "merge_queue_grouping_strategy" {
-  description = "The grouping strategy to use for the merge queue. Defaults to \"ALLGAIN\"."
+  description = "The grouping strategy to use for the merge queue. Defaults to \"ALLGREEN\"."
   type        = string
-  default     = "ALLGAIN"
+  default     = "ALLGREEN"
 }
 
 variable "merge_queue_max_entries_to_build" {
