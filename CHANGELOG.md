@@ -7,10 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-Use this section to track upcoming changes, to let people see what changes they might expect in
-upcoming releases.
+### Fixed
 
-At release time, move the entries from here to a new release section.
+- Automatically disable `vulnerability_alerts` for archived repositories to prevent recurring Terraform plan drift.
 
 ## [1.4.0] - 2026-03-10
 
