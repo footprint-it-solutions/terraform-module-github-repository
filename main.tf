@@ -25,7 +25,7 @@ resource "github_repository" "this" {
   squash_merge_commit_title               = var.squash_merge_commit_title
   topics                                  = var.topics
   visibility                              = var.visibility
-  vulnerability_alerts                    = var.vulnerability_alerts
+  vulnerability_alerts                    = var.archived ? false : var.vulnerability_alerts
   web_commit_signoff_required             = var.web_commit_signoff_required
 
   dynamic "pages" {

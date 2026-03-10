@@ -12,6 +12,12 @@ upcoming releases.
 
 At release time, move the entries from here to a new release section.
 
+## [1.4.1] - 2026-03-10
+
+### Fixed
+
+- Automatically disable `vulnerability_alerts` for archived repositories to prevent recurring Terraform plan drift.
+
 ## [1.4.0] - 2026-03-10
 
 ### Added
