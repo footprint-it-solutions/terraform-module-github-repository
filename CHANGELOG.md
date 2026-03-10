@@ -12,6 +12,16 @@ upcoming releases.
 
 At release time, move the entries from here to a new release section.
 
+## [1.4.0] - 2026-03-10
+
+### Added
+
+- Added support for GitHub Merge Queue options in the repository ruleset, with new variables for customisation.
+
+### Changed
+
+- Re-ordered attributes and blocks in `rulesets.tf` alphabetically for consistency with organisational coding standards.
+
 ## [1.3.1] - 2026-02-26
 
 ### Removed
