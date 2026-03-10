@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+Use this section to track upcoming changes, to let people see what changes they might expect in
+upcoming releases.
+
+At release time, move the entries from here to a new release section.
+
+## [1.4.2] - 2026-03-10
+
 ### Fixed
 
 - Corrected typo in `merge_queue_grouping_strategy` default value (from `ALLGAIN` to `ALLGREEN`).
